@@ -14,9 +14,18 @@
     color: #3b82f6;
     text-shadow: 2px 2px 4px #9ca3af;
 }
-/* 1. Removing bullet structures */
+.clean-list {
+    list-style-type: disc;  /* Force standard round bullet points */
+    padding-left: 40px;     /* Crucial! Pushes the text right so the bullets have room to show up */
+    margin-left: 20px;      /* Extra safety gap from the screen wall */
+}
+
+/* 2. Style the individual list items normally */
 .clean-list li {
-    list-style-type: disc; 
+    list-style-type: inherit; /* Tells the items to look at the parent rules above */
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin-bottom: 5px;       /* Adds a clean space between lines */
 }
 .cutoff-text {
     width: 200px;
