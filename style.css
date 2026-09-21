@@ -16,7 +16,7 @@
 }
 /* 1. Removing bullet structures */
 .clean-list li {
-    list-style-type: none; 
+    list-style-type: disc; 
 }
 .cutoff-text {
     width: 200px;
