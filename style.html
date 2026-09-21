@@ -1,57 +1,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Flexbox and Grid Layout System</title>
+    <title>Simple CSS Properties</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 1. FLEX DIRECTION DEMO -->
-    <h3>1. flex-direction & gap: 10px</h3>
-    <div class="flex-container fx-row">
-        <div class="item">Row 1</div><div class="item">Row 2</div><div class="item">Row 3</div>
-    </div>
-    <div class="flex-container fx-column">
-        <div class="item">Column A</div><div class="item">Column B</div>
-    </div>
-    <div class="flex-container fx-row-reverse">
-        <div class="item">Rev 1</div><div class="item">Rev 2</div><div class="item">Rev 3</div>
+    <h3>1. list-style-type: none</h3>
+    <ul class="clean-list">
+        <li>Item A (No bullet points here)</li>
+        <li>Item B (Perfect for clean menus)</li>
+    </ul>
+
+    <h3>2. text-transform: uppercase</h3>
+    <p class="loud-text">This sentence was typed lowercase but renders loud!</p>
+
+    <h3>3. cursor: pointer</h3>
+    <div class="simple-box clickable-box">
+        Hover your mouse over me to see the hand selector icon drop into place.
     </div>
 
-    <!-- 2. JUSTIFY CONTENT DEMO -->
-    <h3>2. justify-content (Main Axis Spacing)</h3>
-    <div class="flex-container jc-center">
-        <div class="item">Center</div><div class="item">Center</div>
-    </div>
-    <div class="flex-container jc-between">
-        <div class="item">Left Edge</div><div class="item">Right Edge</div>
-    </div>
-
-    <!-- 3. ALIGN ITEMS DEMO -->
-    <h3>3. align-items (Cross Axis Height Alignment)</h3>
-    <div class="flex-container flex-height-wrapper ai-center">
-        <div class="item">Centered Vertically</div>
-        <div class="item">Inside Parent Box</div>
-    </div>
-    <div class="flex-container flex-height-wrapper ai-baseline">
-        <div class="item" style="font-size: 24px; background: red;">Big</div>
-        <div class="item" style="font-size: 14px; background: orange;">Small Text</div>
-    </div>
-
-    <!-- 4. & 5. CSS GRID DEMO -->
-    <h3>4. grid-template-columns & gap Variations</h3>
-    
-    <p><strong>repeat(3, 1fr):</strong></p>
-    <div class="grid-container g-repeat">
-        <div class="item" style="background:#8b5cf6;">Grid 1</div>
-        <div class="item" style="background:#8b5cf6;">Grid 2</div>
-        <div class="item" style="background:#8b5cf6;">Grid 3</div>
-    </div>
-
-    <p><strong>200px auto (With 1rem 2rem gap):</strong></p>
-    <div class="grid-container g-mixed">
-        <div class="item" style="background:#ec4899;">Sidebar (200px)</div>
-        <div class="item" style="background:#ec4899;">Main Content (Auto Fluid Window Width)</div>
+    <h3>4. border-style: dotted</h3>
+    <div class="simple-box dotted-border">
+        I am wrapped completely inside a dotted border layout tracking.
     </div>
 
 </body>
