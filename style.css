@@ -1,35 +1,39 @@
-.simple-box {
-    padding: 15px;
-    margin-bottom: 15px;
-    border-width: 3px;
+.showcase-box {
     background-color: #f3f4f6;
+    border: 2px solid #9ca3af;
+    padding: 15px;
+    margin-bottom: 25px;
     font-family: Arial, sans-serif;
+    color: #333;
 }
 
+/* 1. text-shadow: Horizontal shift, Vertical shift, Blur size, Color */
+.shadow-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3b82f6;
+    text-shadow: 2px 2px 4px #9ca3af;
+}
 /* 1. Removing bullet structures */
 .clean-list li {
     list-style-type: none; 
 }
-
-/* 2. Text adjustments */
-.loud-text {
-    text-transform: uppercase; 
+.cutoff-text {
+    width: 200px;
+    white-space: nowrap; /* Forces all text onto a single line */
+    overflow: hidden;    /* Hides the text that spills out */
+    text-overflow: ellipsis; /* Adds a clean "..." at the end automatically */
 }
 
-/* 3. Mouse interactions */
-.clickable-box {
-    cursor: pointer; 
-    background-color: #3b82f6;
-    color: white;
+/* 4. min-height: Guarantees the box stays tall even with zero content inside */
+.tall-box {
+    min-height: 150px;
+    background-color: #e8f5e9;
+    border-color: #2e7d32;
 }
 
-/* 4. Visual stroke options */
-.dotted-border {
-    border-style: dotted; 
-    border-color: #ef4444;
-}
-
-/* 5. Inheriting parent rules */
-.inherited-color {
-    color: inherit; 
+/* 5. outline: Drawn outside the border line without shifting layout space */
+.outline-box {
+    border: 2px solid black;
+    outline: 4px solid #f59e0b; /* Bright orange outer ring */
 }

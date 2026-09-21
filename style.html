@@ -6,24 +6,31 @@
 </head>
 <body>
 
-    <h3>1. list-style-type: none</h3>
+    <h3> list-style-type: none</h3>
     <ul class="clean-list">
         <li>Item A (No bullet points here)</li>
         <li>Item B (Perfect for clean menus)</li>
     </ul>
-
-    <h3>2. text-transform: uppercase</h3>
-    <p class="loud-text">This sentence was typed lowercase but renders loud!</p>
-
-    <h3>3. cursor: pointer</h3>
-    <div class="simple-box clickable-box">
-        Hover your mouse over me to see the hand selector icon drop into place.
+    <hr>
+ <h3> text-shadow: 2px 2px 4px gray</h3>
+    <p class="shadow-text">This text has a soft gray drop shadow behind it!</p>
+    <hr>
+ <h3>3. text-overflow: ellipsis</h3>
+    <!-- The long text will automatically turn into a "..." when it hits the 200px wall -->
+    <div class="showcase-box cutoff-text">
+        This is a very long headline that will get trimmed down neatly by the browser layout.
     </div>
-
-    <h3>4. border-style: dotted</h3>
-    <div class="simple-box dotted-border">
-        I am wrapped completely inside a dotted border layout tracking.
+<hr>
+    <h3> min-height: 150px</h3>
+    <div class="showcase-box tall-box">
+        <strong>min-height: 150px;</strong><br>
+        Even if I only have this tiny amount of text, my green box is forced to stay at least 150 pixels tall!
     </div>
-
+<hr>
+    <h3> outline: 4px solid #f59e0b</h3>
+    <div class="showcase-box outline-box">
+        Look closely! I have a black border, plus a thick orange outline wrapped around the very outside edge of the container.
+    </div>
+<hr>
 </body>
 </html>
